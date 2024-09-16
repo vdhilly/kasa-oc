@@ -1,0 +1,65 @@
+.link_card_logement {
+  .logement-card {
+    position: relative;
+    display: flex;
+    @include radius-10;
+    width: 100%;
+    height: 255px;
+    width: 335px;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      height: 340px;
+    }
+    & img {
+      display: flex;
+      width: 100%;
+      @include radius-10;
+      object-fit: cover;
+    }
+
+    &__overlayer {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      background: $linear-cards;
+      @include WH-full;
+      @include radius-10;
+      &:hover {
+        animation: reveal 0.8s ease-out both;
+        animation-delay: 0.15s;
+        background: rgba(125, 25, 25, 0.2);
+      }
+    }
+
+    &__title {
+      display: flex;
+      align-items: flex-end;
+      position: absolute;
+      color: #f1f1f1;
+      @include font-bold;
+      left: 5.88%;
+      right: 5.88%;
+      top: 78.82%;
+      bottom: 5.88%;
+    }
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 40px;
+    padding: 50px 0px;
+    background-color: #f7f7f7;
+    @include radius-25;
+    margin: auto;
+  }
+}

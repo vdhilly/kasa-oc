@@ -1,0 +1,10 @@
+@import "./Utils/mixins";
+@import "./Utils/variables";
+
+@import "./Base/base";
+@import "../components/Card/Card";
+@import "../components/Header/Header";
+@import "../components/Footer/Footer";
+@import "../components/Banner/Banner";
+
+@import "../pages/Home/Home";
