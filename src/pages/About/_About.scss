@@ -1,0 +1,22 @@
+.about {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .banner {
+    @include radius-10;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include radius-25;
+    }
+
+    img {
+      @include radius-10;
+
+      @media screen and (min-width: $breakpoint-desktop) {
+        @include radius-25;
+      }
+    }
+  }
+}

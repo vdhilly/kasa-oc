@@ -15,9 +15,11 @@
   img {
     position: relative;
     background-size: cover;
-    filter: brightness(40%);
     @include radius-25;
     @include WH-full;
+  }
+  img.dark {
+    filter: brightness(40%);
   }
   span {
     position: absolute;

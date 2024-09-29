@@ -7,7 +7,7 @@ import logements from "../../data.json";
 function Home() {
   return (
     <div className="home-container">
-      <Banner title="Chez vous, partout et ailleurs" image={HomeBannerImg} />
+      <Banner title="Chez vous, partout et ailleurs" image={HomeBannerImg} isDark={true} />
       <div className="cards-container">
         {logements.map((logement, index) => (
           <div className="card_logement" key={index}>

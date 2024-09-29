@@ -1,0 +1,26 @@
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .tag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    background-color: #ff6060;
+
+    .tag-button {
+      color: white;
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 14.26px;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+}

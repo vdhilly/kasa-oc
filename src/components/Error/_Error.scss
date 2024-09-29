@@ -1,0 +1,37 @@
+.lost {
+  justify-content: space-between;
+  gap: 135px;
+  @include flex-column;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+  margin: 52px 20px;
+  &__title {
+    font-family: Montserrat;
+    font-size: 96px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+    color: #ff6060;
+  }
+  &__subtitle {
+    font-family: Montserrat;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #ff6060;
+    text-align: center;
+    @media screen and (min-width: $breakpoint-desktop) {
+      font-size: 36px;
+    }
+  }
+  &__link {
+    text-align: center;
+    font-size: 14px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      font-size: 18px;
+    }
+  }
+}

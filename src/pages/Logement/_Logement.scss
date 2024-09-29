@@ -1,0 +1,32 @@
+.logement-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+
+  .logement__title {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+      color: #ff6060;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+    }
+    &__location {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19.96px;
+      text-align: left;
+    }
+  }
+}
+.rate-host-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

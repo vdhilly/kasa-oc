@@ -1,0 +1,25 @@
+.host {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  &__name {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.11px;
+    text-align: right;
+    color: #ff6060;
+    white-space: wrap;
+  }
+  &__picture {
+    width: 32px;
+    height: 32px;
+
+    img {
+      border-radius: 50%;
+      @include WH-full;
+    }
+  }
+}
