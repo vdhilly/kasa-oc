@@ -19,6 +19,7 @@
   bottom: 0%;
   @include radius-10;
   opacity: 0;
+  transition: opacity ease-in-out 0.6s;
 
   @media screen and (min-width: $breakpoint-desktop) {
     @include radius-25;

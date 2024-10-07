@@ -1,10 +1,8 @@
 .lost {
   justify-content: space-between;
-  gap: 135px;
+  // gap: ;
   @include flex-column;
 
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
   margin: 52px 20px;
   &__title {
     font-family: Montserrat;
@@ -14,6 +12,9 @@
     margin: 0;
     text-align: center;
     color: #ff6060;
+    @media screen and (min-width: $breakpoint-desktop) {
+      font-size: 280px;
+    }
   }
   &__subtitle {
     font-family: Montserrat;

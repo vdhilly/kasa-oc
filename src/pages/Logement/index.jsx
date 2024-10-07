@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Error from "../../components/Error";
 import Carrousel from "../../components/Logement/Carroussel";
 import Collapse from "../../components/Logement/Collapse";
 import Host from "../../components/Logement/Host";
@@ -9,8 +10,8 @@ import logements from "../../data.json";
 function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
+  if (!logement) return <Error />;
 
-  console.log(logement);
   const tags = logement.tags;
   const host = logement.host;
   const rating = logement.rating;
@@ -35,7 +36,7 @@ function Logement() {
           <Host hostName={host.name} hostPic={host.picture} />
         </div>
       </div>
-      <div class="logement-collapses">
+      <div className="logement-collapses">
         <Collapse title="Description" content={logement.description} />
         <Collapse title="Équipements" content={logement.equipments} isEquipment={true} />
       </div>

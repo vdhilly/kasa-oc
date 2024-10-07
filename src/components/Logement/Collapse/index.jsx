@@ -3,7 +3,6 @@ import arrow from "../../../assets/arrow_back.svg";
 
 function Collapse({ title, content, isEquipment = false }) {
   const [openCollapse, setOpenCollapse] = useState(false);
-  console.log(content);
 
   const displayContent = () => {
     setOpenCollapse((openCollapse) => !openCollapse);
