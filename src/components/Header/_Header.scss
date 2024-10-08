@@ -3,9 +3,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin: auto;
   max-width: 1240px;
   width: 100%;
+
   nav {
     @include flex-row;
     justify-content: space-between;
