@@ -18,6 +18,7 @@ main {
 @media screen and (min-width: $breakpoint-desktop) {
   header,
   main {
+    margin: 0px auto;
     max-width: 1440px;
   }
 }
